@@ -52,5 +52,8 @@ Adapt/adopt/extend the `yml` files from one of your workflow folders.
 
 Implement one failing test and at least one passing test:
 
-- _enter the name of a **passing** test
-- _enter the name of a **failing** test
+
+   
+
+- To find number of ranges
+-  Not checking range and number of values in range via REQUIRE, but only with console
