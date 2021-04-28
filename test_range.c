@@ -6,7 +6,7 @@ void TC_01()
 {
 	float readingsArray[]={4,4,4,4};
     int numOfReadings = sizeof(readingsArray)/sizeof(readingsArray[0]);
-	printf ("Input Array : ");
+	printf ("\nTC_01 \nInput Array : ");
 	printArray (readingsArray, numOfReadings);
     assert(detectRanges(readingsArray, numOfReadings) == 1);
 }
@@ -16,7 +16,7 @@ void TC_02()
 {
 	float *readingsArray = NULL;
     int numOfReadings = 0;
-	printf ("Input Array : ");
+	printf ("\nTC_02 \nInput Array : ");
 	printArray (readingsArray, numOfReadings);
     assert(detectRanges(readingsArray, numOfReadings) == 0);
 }
@@ -26,7 +26,7 @@ void TC_03()
 {
 	float readingsArray[]={3, 3, 5, 4, 10, 11, 12};
     int numOfReadings = sizeof(readingsArray)/sizeof(readingsArray[0]);
-	printf ("Input Array : ");
+	printf ("\nTC_03 \nInput Array : ");
 	printArray (readingsArray, numOfReadings);
     assert(detectRanges(readingsArray, numOfReadings) == 2);
 }

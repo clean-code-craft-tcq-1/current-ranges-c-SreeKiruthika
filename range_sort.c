@@ -24,7 +24,7 @@ void bubbleSortAscending(const float* inputArray, int numOfReadings, float* sort
       }
     }
   }
-   printf("Sorted Array : ")  ;
+   printf("\nSorted Array : ")  ;
    
    printArray (sortedArray,numOfReadings);
    

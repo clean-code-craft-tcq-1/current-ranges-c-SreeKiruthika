@@ -20,7 +20,7 @@ int detectRanges(const float* readingsArray, int numOfReadings)
       {
         if(!(i == (numOfReadings-1)))
         {
-            if((sortedArray[i+1] - sortedArray[i])<= 1)
+            if((sortedArray[i+1] - sortedArray[i])<= 1.0f)
 	        {
 		      readings++;
 		      max = sortedArray[i+1];
@@ -31,7 +31,7 @@ int detectRanges(const float* readingsArray, int numOfReadings)
 	    {
 	        max = sortedArray[numOfReadings-1];
 	    }
-		printf("%d - %d , %d\n",min, max,readings);
+		printf("%f - %f , %d\n",min, max,readings);
         readings = 1;
 	    min = sortedArray[i+1];
 	    numofRange++;
