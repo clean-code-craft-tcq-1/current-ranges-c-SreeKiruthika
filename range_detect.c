@@ -15,7 +15,7 @@ int detectRanges(const float* readingsArray, int numOfReadings)
       float min = sortedArray[0];
       float max = sortedArray[0];
       int readings = 1;
-  
+	  printf("\nRange         Count\n");
       for (int i=0; i < numOfReadings;i++)
       {
         if(!(i == (numOfReadings-1)))
