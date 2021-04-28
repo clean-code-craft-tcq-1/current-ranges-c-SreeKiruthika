@@ -2,8 +2,7 @@
 
 int detectRanges(const float* readingsArray, int numOfReadings)
 {
-   struct RangeInfo_s RangeInfoArray[10];
-   int numofRange = 0;
+    int numofRange = 0;
    
     if((readingsArray != NULL) && (numOfReadings > 0))	
     {	   
