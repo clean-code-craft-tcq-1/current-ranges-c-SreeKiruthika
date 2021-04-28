@@ -24,5 +24,17 @@ void bubbleSortAscending(const float* inputArray, int numOfReadings, float* sort
       }
     }
   }
+   printf("Sorted Array : ")  ;
+   
+   printArray (sortedArray,numOfReadings);
+   
 } 
+
+void printArray (float *arrayIndex, int Arraysize)
+{
+	for(int i=0; i< Arraysize ; i++)
+   {
+		printf("%f,", arrayIndex[i]);
+   }
+}
 

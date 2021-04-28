@@ -31,6 +31,7 @@ int detectRanges(const float* readingsArray, int numOfReadings)
 	    {
 	        max = sortedArray[numOfReadings-1];
 	    }
+		printf("%d - %d , %d\n",min, max,readings);
         readings = 1;
 	    min = sortedArray[i+1];
 	    numofRange++;
