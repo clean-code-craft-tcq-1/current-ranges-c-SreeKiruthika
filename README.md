@@ -55,5 +55,5 @@ Implement one failing test and at least one passing test:
 
    
 
-- To find number of ranges
--  Not checking range and number of values in range via REQUIRE, but only with console
+- To find number of ranges classified based on the readings - Pass test
+- To check the number of readings in a range via test case is not implemente, but verified via console - Failing in scope, need to work on it
