@@ -34,11 +34,11 @@ void TC_03()
 /*"infers the number of ranges when mixed values in flaot*/
 void TC_04()
 {
-	float readingsArray[]={3.1, 1.2, 2.5, 4.9, 1.1, 11.2, 12.5,10.9,20,20.5};
+	float readingsArray[]={3.7, 1.2, 2.5, 4.5, 1.1, 11.2, 12.5,10.9,20,20.5};
     int numOfReadings = sizeof(readingsArray)/sizeof(readingsArray[0]);
 	printf ("\nTC_04 \nInput Array : ");
 	printArray (readingsArray, numOfReadings);
-    assert(detectRanges(readingsArray, numOfReadings) == 3);
+    assert(detectRanges(readingsArray, numOfReadings) == 4);
 }
 
 int main()
