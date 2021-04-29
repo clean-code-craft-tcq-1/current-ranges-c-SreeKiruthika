@@ -5,7 +5,7 @@ void bubbleSortAscending(const float* inputArray, int numOfReadings, float* sort
    int c, d;
    float temp;
    
-	/*Assign it to a temporary sorting array*/
+	/*Initialise sorting array with input array*/
    for(int i=0; i< numOfReadings ; i++)
    {
 		sortedArray[i] = inputArray[i];
@@ -25,16 +25,23 @@ void bubbleSortAscending(const float* inputArray, int numOfReadings, float* sort
     }
   }
    printf("\nSorted Array : ")  ;
-   
+      
    printArray (sortedArray,numOfReadings);
    
 } 
 
 void printArray (float *arrayIndex, int Arraysize)
 {
-	for(int i=0; i< Arraysize ; i++)
-   {
-		printf("%f,", arrayIndex[i]);
-   }
+	if (Arraysize <= 0)
+	{
+		printf("NULL ARRAY");	
+	}
+	else
+	{
+		for(int i=0; i< Arraysize ; i++)
+		{
+			printf("%.2f,", arrayIndex[i]);
+		}
+	}
 }
 

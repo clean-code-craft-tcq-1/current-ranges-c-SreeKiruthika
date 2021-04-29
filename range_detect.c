@@ -12,9 +12,9 @@ int detectRanges(const float* readingsArray, int numOfReadings)
       bubbleSortAscending(readingsArray, numOfReadings, sortedArray);
   
       /*check for ranges */
-      float min = sortedArray[0];
-      float max = sortedArray[0];
-      int readings = 1;
+      float rangeMin = sortedArray[0];
+      float rangeMax = sortedArray[0];
+      int numOfReadingsInRange = 1;
 	  printf("\nRange         Count\n");
       for (int i=0; i < numOfReadings;i++)
       {
@@ -22,24 +22,24 @@ int detectRanges(const float* readingsArray, int numOfReadings)
         {
             if((sortedArray[i+1] - sortedArray[i])<= 1.0f)
 	        {
-		      readings++;
-		      max = sortedArray[i+1];
+		      numOfReadingsInRange++;
+		      rangeMax = sortedArray[i+1];
 		      continue;
 	        }    
         }
 	    else
 	    {
-	        max = sortedArray[numOfReadings-1];
+	        rangeMax = sortedArray[numOfReadings-1];
 	    }
-		printf("%f - %f , %d\n",min, max,readings);
-        readings = 1;
-	    min = sortedArray[i+1];
+		printf("%.2f - %.2f , %d\n",rangeMin, rangeMax,numOfReadingsInRange);
+        numOfReadingsInRange = 1;
+	    rangeMin = sortedArray[i+1];
 	    numofRange++;
       }	
     }
     else
     {
-       printf("NULL readings input");
+       printf("NULL array input");
     }
  
 	return numofRange;
