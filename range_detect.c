@@ -34,6 +34,7 @@ int detectRanges(const float* readingsArray, int numOfReadings)
 		printf("%.2f - %.2f , %d\n",rangeMin, rangeMax,numOfReadingsInRange);
         numOfReadingsInRange = 1;
 	    rangeMin = sortedArray[i+1];
+		rangeMax = sortedArray[i+1];
 	    numofRange++;
       }	
     }
